@@ -1,6 +1,7 @@
 use std::env;
 use std::process;
 
+mod utils;
 mod prob_01;
 
 fn main() {
