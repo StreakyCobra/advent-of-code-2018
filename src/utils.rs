@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::Read;
 use std::process;
 
-pub fn parse_file(name: &str) -> String{
+pub fn parse_file(name: &str) -> String {
     let mut file = match File::open(name) {
         Ok(file) => file,
         Err(_) => {
@@ -10,7 +10,7 @@ pub fn parse_file(name: &str) -> String{
             process::exit(1)
         }
     };
-    
+
     let mut content: String = String::new();
     match file.read_to_string(&mut content) {
         Ok(_) => (),
