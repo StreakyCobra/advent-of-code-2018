@@ -1,9 +1,10 @@
 use std::env;
 use std::process;
 
-mod utils;
 mod prob_01;
 mod prob_02;
+mod prob_03;
+mod utils;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -16,9 +17,10 @@ fn main() {
     match problem {
         Some(1) => prob_01::solve(),
         Some(2) => prob_02::solve(),
+        Some(3) => prob_03::solve(),
         Some(_) | None => {
-        println!("Problem solver not implemented yet.");
-        process::exit(1);
+            println!("Problem solver not implemented yet.");
+            process::exit(1);
         }
     }
 }
