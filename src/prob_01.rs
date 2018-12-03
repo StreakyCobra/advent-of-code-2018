@@ -31,7 +31,6 @@ fn solve_second_part(changes: &Vec<i64>) -> i64 {
             sum = freq;
         }
     }
-    return 0;
 }
 
 #[cfg(test)]
