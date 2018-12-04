@@ -1,9 +1,12 @@
+extern crate chrono;
+
 use std::env;
 use std::process;
 
 mod prob_01;
 mod prob_02;
 mod prob_03;
+mod prob_04;
 mod utils;
 
 fn main() {
@@ -18,6 +21,7 @@ fn main() {
         Some(1) => prob_01::solve(),
         Some(2) => prob_02::solve(),
         Some(3) => prob_03::solve(),
+        Some(4) => prob_04::solve(),
         Some(_) | None => {
             println!("Problem solver not implemented yet.");
             process::exit(1);
