@@ -54,7 +54,7 @@ pub fn solve() {
     let input: String = utils::parse_file("input/04.txt");
     let content = parse(&input);
 
-    println!("Problem 01");
+    println!("Problem 04");
     println!("\tFirst part:  {}", solve_first_part(&content));
     println!("\tSecond part: {}", solve_second_part(&content));
 }
