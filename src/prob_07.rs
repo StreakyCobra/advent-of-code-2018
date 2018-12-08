@@ -28,8 +28,8 @@ fn solve_first_part(dependencies: &HashMap<char, HashSet<char>>) -> String {
     while !depends.is_empty() {
         let mut upcoming: Vec<char> = depends
             .iter()
-            .filter(|&(c, d)| d.len() == 0)
-            .map(|(c, d)| c.clone())
+            .filter(|&(_, d)| d.len() == 0)
+            .map(|(c, _)| c.clone())
             .collect();
         upcoming.sort();
         let next = upcoming[0];
@@ -76,8 +76,8 @@ fn solve_second_part(
         // Upcoming tasks
         let mut upcoming: Vec<char> = depends
             .iter()
-            .filter(|&(c, d)| d.len() == 0)
-            .map(|(c, d)| c.clone())
+            .filter(|&(_, d)| d.len() == 0)
+            .map(|(c, _)| c.clone())
             .collect();
         upcoming.sort();
         // Split tasks to workers
