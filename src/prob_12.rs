@@ -86,13 +86,13 @@ fn solve_first_part(statement: &Statement) -> usize {
 fn solve_second_part(_statement: &Statement) -> &str {
     return "Solved with a calculator \\o/ I noticed that after a while the
     \tpattern keep getting the same, only shifting to the right. So by looking
-    \tat the increase at each step and doing some maths I got to the right answer."
-    }
+    \tat the increase at each step and doing some maths I got to the right answer.";
+}
 
 #[cfg(test)]
 mod tests {
 
-    use super::{parse, solve_first_part, solve_second_part};
+    use super::{parse, solve_first_part};
 
     #[test]
     fn twelfth_problem_first_part() {
