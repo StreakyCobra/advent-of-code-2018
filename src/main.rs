@@ -18,6 +18,7 @@ mod prob_10;
 mod prob_11;
 mod prob_12;
 mod prob_13;
+mod prob_14;
 mod utils;
 
 fn main() {
@@ -42,6 +43,7 @@ fn main() {
         Some(11) => prob_11::solve(),
         Some(12) => prob_12::solve(),
         Some(13) => prob_13::solve(),
+        Some(14) => prob_14::solve(),
         Some(_) | None => {
             println!("Problem solver not implemented yet.");
             process::exit(1);
